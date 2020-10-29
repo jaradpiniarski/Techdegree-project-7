@@ -1,0 +1,836 @@
+
+/* ==================================== */
+/* ========== DEFAULT LAYOUT ========== */
+/* ==================================== */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header"
+    "navigation"
+    "main";
+    margin: 0px 0px auto;
+    font-family: 'calibri', 'times new roman';
+    color: #5b5b5b;
+    width: 100%;
+}    
+
+
+/* ========== DEFAULT HEADER ========== */
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 50% 10% 0% 10% 30%;
+    grid-template-rows: 8vh;
+    background-color: #7477BF;
+    align-items: center;
+    font-family: -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.app-name {
+    font-weight: normal;
+    justify-self: start;
+    align-self: center;
+    color: #E2E3F6;
+    padding-left: 5%;
+    font-size: 4vw;
+}
+
+.bell-icon {
+    place-self: stretch;
+    justify-self: end;
+    border-right: 1px solid #5b5b5b;
+    padding-right: 20%;
+}
+
+.profile-img {
+    border-radius: 50%;
+    height: 6.5vw;
+    justify-self: center;
+}
+
+.profile-name {
+    color: #fff;
+    font-size: 3.5vw;
+    justify-self: end;
+    padding-right: 10px;
+    font-weight: normal;
+}
+
+
+/* ========== DEFAULT NAVIGATION ========== */
+
+.navigation {
+    grid-area: navigation;
+    background-color: #4D4B72;
+    grid-template-columns: 20% 15% 15% 15% 15% 20%;
+    grid-template-rows: 7vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.dashboard-icon {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.navigation .dashboard-icon img {
+    height: 5vh;
+    width: auto;
+}
+
+.members-icon {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.navigation .members-icon img {
+    height: 5vh;
+    width: auto;
+}
+
+.visits-icon {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.navigation .visits-icon img {
+    height: 5vh;
+    width: auto;
+}
+
+.settings-icon {
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+
+.navigation .settings-icon img {
+    height: 5vh;
+    width: auto;
+}
+
+.navigation a:hover {
+    border-bottom: 5px solid #78CF82;
+}
+
+
+/* ========== DEFAULT MAIN LAYOUT ========== */
+
+.main {
+    grid-area: main;
+}
+
+.widget-container-full,
+.widget-container-half {
+    width: 95vw;
+}
+
+
+/* ========== DEFAULT DASHBOARD ========== */
+
+.main-header {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 8vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.headline {
+    padding-left: 5%;
+    padding-right: 10%;
+    font-size: 3.5vh;
+}
+
+.search-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-bottom-left-radius: 10px;
+    padding-right: 10px;
+}
+
+.search {
+    width: 40vw;  
+}
+
+.main-header-search input[type=search] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* ========== DEFAULT ALERT BANNER ========== */
+
+.alert {
+    padding: 20px 5px 0px 5px;
+    height: 7vh;
+}
+
+.alert-banner {
+    display: grid;
+    grid-template-columns: 97% 3%;
+    justify-content: center;
+    align-content: center;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #7477BF;
+    height: 40px;
+}
+
+.alert-message {
+    justify-self: start;
+    color: #fff;
+}
+
+.alert-banner-close {
+    justify-self: end;
+    color: #fff;
+}
+
+
+/* ========== DEFAULT TRAFFIC LINE GRAPH ========== */
+
+.traffic {
+    border-bottom: 1px solid#E8E8E8;
+    padding-bottom: 20px;
+}
+
+.traffic-header {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.traffic-header h3 {
+    padding-left: 15px;
+}
+
+.traffic-nav {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-right: 10px;
+    justify-self: end;
+}
+
+.traffic-nav li {
+    display: inline;
+    list-style-type: none;
+    padding: 3px 10px;
+    font-size: 80%;
+
+}
+
+.active {
+    border-radius: 10px;
+    color: #fff;
+    background-color: #78CF82;
+}
+
+.widget-container-full {
+    height: 20vh;
+}
+
+#traffic-chart {
+    padding-left: 10px;
+}
+
+
+/* ========== DEFAULT DAILY TRAFFIC BAR CHART ========== */
+
+.daily {
+    border-bottom: 1px solid#E8E8E8;
+    padding-bottom: 20px;
+}
+
+.daily h3 {
+    padding-left: 15px;
+}
+
+#daily-chart {
+    padding-left: 10px;
+}
+
+
+/* ========== DEFAULT USERS DONUT CHART ========== */
+
+.mobile-users {
+    border-bottom: 1px solid#E8E8E8;
+    padding-bottom: 20px;
+}
+
+.mobile-users h3 {
+    padding-left: 15px;
+}
+
+
+/* ========== DEFAULT SOCIAL STATS ========== */
+
+.social h3 {
+    padding-left: 15px;
+}
+
+.twitter,
+.facebook,
+.google {
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 5% 5%;
+}
+
+.social-image {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.social-image img {
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #7477BF;
+    height: 50%;
+    width: 50%;
+}
+
+.social-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social-text {
+    font-weight: bold;
+    color: #7477BF;
+    margin: 0;
+}
+
+.social-amount {
+    font-family: -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    font-size: 2em;
+    margin: 0;
+}
+
+
+/* ========== DEFAULT NEW MEMBERS ========== */
+
+.members {
+    border-top: 1px solid#E8E8E8;
+}
+
+.members h3 {
+    padding-left: 15px;
+}
+
+.members-container {
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin: 5% 5%;
+}
+
+.members-image {
+    border-radius: 50%;
+    height: 50%;
+    width: 50%;
+}
+
+.members-text a {
+    font-size: .8em;
+}
+
+
+/* ========== DEFAULT RECENT ACTIVITY ========== */
+
+.activity {
+    border-top: 1px solid#E8E8E8;
+}
+
+.activity h3 {
+    padding-left: 15px;
+}
+
+.activity-container {
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin: 5% 5%;
+}
+
+.activity-container img {
+    border-radius: 50%;
+    height: 50%;
+    width: 50%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+
+/* ========== DEFAULT MESSAGE USER ========== */
+
+.message {
+    border-top: 1px solid#E8E8E8;
+}
+
+.message h3 {
+    padding-left: 15px;
+}
+
+.widget-container {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-row-gap: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.form-field {
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+}
+
+.form-area {
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+}
+
+#send {
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+    background-color: #7477BF;
+    color: #fff;
+    font-weight: bold;
+    font-family: -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+}
+
+::placeholder {
+    font-family: -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 5px;
+}
+
+
+/* ========== DEFAULT SETTINGS ========== */
+
+.settings {
+    border-top: 1px solid#E8E8E8;
+    margin-top: 20px;
+}
+
+.settings h3 {
+    padding-left: 15px;
+}
+
+/* Toggle Options Layout */
+.public-switch,
+.email-switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.public-switch p,
+.email-switch p {
+    padding-left: 10px;
+    padding-right: 25px;
+}
+
+.public-switch h4,
+.email-switch h4 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 24px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #b2b2b2;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    text-align: end;
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border: 1px solid #E8E8E8;
+  }
+  
+  input:checked + .slider {
+    background-color: #7477BF;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #7477BF;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(34px);
+    -ms-transform: translateX(34px);
+    transform: translateX(34px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+/* Timezone Dropdown */
+.dropdown {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.dropdown select {
+    width: 80%;
+}
+
+/* Save and Cancel Buttons */
+.settings-button {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 20%;
+}
+
+.button-primary {
+    width: 48%;
+    height: 40px;
+    float: left;
+    background-color: #7477BF;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #E8E8E8;
+}
+
+.button-disabled {
+    width: 48%;
+    height: 40px;
+    float: right;
+    background-color: #b2b2b2;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #E8E8E8;
+}
+
+#timezone {
+    font-family: -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #5b5b5b;
+}
+
+
+/* ==================================== */
+/* ========== DESKTOP LAYOUT ========== */
+/* ==================================== */
+
+@media (min-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 65px 1fr;
+        grid-template-areas:
+        "header header"
+        "navigation main";
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .main-header,
+    .alert,
+    .traffic,
+    .social {
+        grid-column: 1 / span 2;
+    }
+
+    .daily,
+    .members,
+    .message {
+        grid-column: 1 / span 1;
+    }
+
+    .mobile,
+    .activity,
+    .settings {
+        grid-column: 2 / span 1;
+    }
+
+    .widget-container-full {
+        width: 90vw;
+    }
+
+    .widget-container-half {
+        width: 45vw;
+    }
+
+
+    /* ========== DESKTOP HEADER ========== */
+
+    .header {
+        grid-template-rows: 11vh;
+    }
+    
+    .app-name {
+        font-size: 3vw;
+    }
+    
+    .profile-name {
+        font-size: 2vw;
+    }
+
+
+    /* ========== DESKTOP NAVIGATION ========== */
+
+    .navigation {
+        grid-template-columns: 65px;
+        grid-template-rows: 3% 3% 3% 3% 88%;
+    }
+    
+    .dashboard-icon {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .navigation .dashboard-icon img {
+        place-self: center;
+    }
+    
+    .members-icon {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    .navigation .members-icon img {
+        place-self: center;
+    }
+    
+    .visits-icon {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    
+    .navigation .visits-icon img {
+        place-self: center;
+    }
+    
+    .settings-icon {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    
+    .navigation .settings-icon img {
+        place-self: center;
+    }
+
+
+    /* ========== DESKTOP DASHBOARD ========== */
+
+    .main-header {
+        grid-template-columns: 15% 85%;
+        grid-template-rows: 9vh;
+        padding-bottom: 15px;
+    }
+
+    .headline {
+        font-size: 4vh;
+        justify-self: center;
+    }
+
+    .search-container {
+        padding-right: 30px;
+    }
+
+    .search {
+        width: 35vw;  
+        height: 5vh;
+        font-size: 2vh;
+        padding-left: 15px;
+    }
+
+
+    /* ========== DESKTOP ALERT BANNER ========== */
+
+    .alert {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .alert-banner {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    /* ========== DESKTOP TRAFFIC LINE GRAPH ========== */
+
+    #traffic-chart {
+        padding-top: 10px;
+        padding-left: 15px;
+    }
+
+    .traffic-header {
+        padding-top: 10px;
+    }
+
+    .traffic-nav {
+        padding-right: 15px;
+    }
+
+    .widget-container-full {
+        height: 40vh;
+    }
+
+
+    /* ========== DESKTOP DAILY TRAFFIC BAR CHART ========== */
+
+    #daily-chart {
+        padding-top: 10px;
+        padding-left: 15px;
+    }
+
+    .daily h3 {
+        padding-left: 15px;
+    }
+
+
+    /* ========== DESKTOP MOBILE USERS DONUT CHART ========== */
+
+    .mobile-users {
+        border-left: 1px solid #E8E8E8;
+    }
+
+
+    /* ========== DESKTOP SOCIAL STATS ========== */
+
+    .social h3 {
+        margin-bottom: 0;
+    }
+
+    .social-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-bottom: 10px;
+    }
+
+
+    /* ========== DESKTOP NEW MEMBERS ========== */
+
+    .members {
+        border-right: 1px solid #E8E8E8;
+    }
+
+    .members-container {
+        border-bottom: 1px solid #E8E8E8;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+    }
+
+    .members-container:last-child {
+        border-bottom: none;
+    }
+
+    .members-text a {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .members-text {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .members-date {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+
+    /* ========== DESKTOP RECENT ACTIVITY ========== */
+
+    .activity-container {
+        border-bottom: 1px solid #E8E8E8;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+    }
+
+    .activity-container:last-child {
+        border-bottom: none;
+    }
+
+
+    /* ========== DESKTOP MESSAGE USER ========== */
+
+    .message {
+        border-right: 1px solid #E8E8E8;
+    }
+
+    .form-area {
+        height: 100%;
+    }
+
+
+    /* ========== DESKTOP SETTINGS ========== */
+
+    .settings {
+        margin-top: 0;
+    }
+}
