@@ -150,31 +150,31 @@
             <section class="activity">
                 <h3>RECENT ACTIVITY</h3>
                 <div class="activity-container">
-                    <img src="images/member-1.jpg" alt="Victoria's Profile Picture" class="profile-image">
+                    <img src="images/member-1.jpg" alt="Victoria's Profile Picture" class="members-image">
                     <div class="recent-text">
-                        <p><strong>Victoria Chambers</strong> commented on Jarad App's SEO Tips</p>
-                        <p>4 hours ago</p>
+                        <p class="activity-description"><strong>Victoria Chambers</strong> commented on Jarad App's SEO Tips</p>
+                        <p class="activity-time">4 hours ago</p>
                     </div>
                 </div>
                 <div class="activity-container">
-                    <img src="images/member-2.jpg" alt="Dale's Profile Picture" class="profile-image">
+                    <img src="images/member-2.jpg" alt="Dale's Profile Picture" class="members-image">
                     <div class="recent-text">
-                        <p><strong>Dale Byrd</strong> liked the post Facebook's Changes for 2020</p>
-                        <p>5 hours ago</p>
+                        <p class="activity-description"><strong>Dale Byrd</strong> liked the post Facebook's Changes for 2020</p>
+                        <p class="activity-time">5 hours ago</p>
                     </div>
                 </div>
                 <div class="activity-container">
-                    <img src="images/member-3.jpg" alt="Dawn's Profile Picture" class="profile-image">
+                    <img src="images/member-3.jpg" alt="Dawn's Profile Picture" class="members-image">
                     <div class="recent-text">
-                        <p><strong>Dawn Wood</strong> commented on Facebook's Changes for 2020</p>
-                        <p>5 hours ago</p>
+                        <p class="activity-description"><strong>Dawn Wood</strong> commented on Facebook's Changes for 2020</p>
+                        <p class="activity-time">5 hours ago</p>
                     </div>
                 </div>
                 <div class="activity-container last">
-                    <img src="images/member-4.jpg" alt="Dan's Profile Picture" class="profile-image">
+                    <img src="images/member-4.jpg" alt="Dan's Profile Picture" class="members-image">
                     <div class="recent-text">
-                        <p><strong>Dan Oliver</strong> posted Jarad App's SEO Tips</p>
-                        <p>1 day ago</p>
+                        <p class="activity-description"><strong>Dan Oliver</strong> posted Jarad App's SEO Tips</p>
+                        <p class="activity-time">1 day ago</p>
                     </div>
                 </div>
             </section>
@@ -192,39 +192,41 @@
             <!-- local settings widget -->
             <section class="settings">
                 <h3>Settings</h3>
-                <!-- custom CSS toggle code-->
-                <div class="email-switch">
-                    <p class="switch-title"> Send Email Notifications</p>
-                    <h4>OFF</h4>
-                    <label class="switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                    <h4>ON</h4>
-                </div>
-                <!-- custom CSS toggle code-->
-                <div class="public-switch">
-                    <p class="switch-title"> Set Profile to Public</p>
-                    <h4>OFF</h4>
-                    <label class="switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                    <h4>ON</h4>
-                </div>
-                <!-- Timezone dropdown-->
-                <div class="dropdown">
-                    <select class="form-field" id="timezone">
-                        <option disabled selected>Select a Timezone</option>
-                        <option>Pacific</option>
-                        <option>Mountain</option>
-                        <option>Central</option>
-                        <option>Eastern</option>
-                    </select>
-                </div>
-                <div class="settings-button" >
-                    <button class="button-primary" id="save">Save</button>
-                    <button class="button-disabled" id="cancel">Cancel</button>
+                <div class="settings-container">
+                    <!-- custom CSS toggle code-->
+                    <div class="email-switch">
+                        <p class="switch-title"> Send Email Notifications</p>
+                        <h4>OFF</h4>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        <h4>ON</h4>
+                    </div>
+                    <!-- custom CSS toggle code-->
+                    <div class="public-switch">
+                        <p class="switch-title"> Set Profile to Public</p>
+                        <h4>OFF</h4>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        <h4>ON</h4>
+                    </div>
+                    <!-- Timezone dropdown-->
+                    <div class="dropdown">
+                        <select class="form-field" id="timezone">
+                            <option disabled selected>Select a Timezone</option>
+                            <option>Pacific</option>
+                            <option>Mountain</option>
+                            <option>Central</option>
+                            <option>Eastern</option>
+                        </select>
+                    </div>
+                    <div class="settings-button" >
+                        <button class="button-primary" id="save">Save</button>
+                        <button class="button-disabled" id="cancel">Cancel</button>
+                    </div>
                 </div>
             </section>
         </main>
