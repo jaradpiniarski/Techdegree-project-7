@@ -1,5 +1,6 @@
 
 const alertBanner = document.getElementById('alert');
+const notification = document.getElementById('notifications');
 const trafficCanvas = document.getElementById('traffic-chart');
 const dailyCanvas = document.getElementById('daily-chart');
 const mobileCanvas = document.getElementById("mobile-chart");
@@ -21,8 +22,13 @@ alertBanner.addEventListener('click', e => {
     const element = e.target;
     if (element.classList.contains("alert-banner-close")) {
     alertBanner.style.display = "none"
+    notification.style.display = "none"
     }
 });
+
+// create the html for the alert banner
+notification.innerHTML = 
+`<p class="asterisk">.</p>`
 
 //data for the traffic line graph
 let trafficData = {

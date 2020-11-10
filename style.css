@@ -29,19 +29,44 @@
     align-items: center;
     font-family: -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
+
   .bell,
   .profile-img {
     margin-right: 15px;
   }
+
   .bell {
     border-right: 1px solid #5b5b5b;
     padding-top: 5px;
     padding-right: 10px;
     margin-right: 10px;
+    height: 5vh;
   }
+
+  .bell-icon:hover {
+    transform: rotate(360deg)
+  }
+
   .bell-icon {
-    width: 4vw;
+    width: 5vw;
+    transition-property: transform;
+    transition-duration: .5s;
+    z-index: 0;
   }
+
+  #notifications {
+      position: relative;
+      z-index: 1;
+      top: ;
+  }
+
+  .asterisk {
+    margin: 0;
+    font-size: 5vw;
+    font-weight: bold;
+    color: #78CF82;
+  }
+
   .app-name {
     font-weight: normal;
     color: #E2E3F6;
@@ -49,10 +74,12 @@
     flex-grow: 1;
     margin: 0;
   }
+
   .profile-img {
     border-radius: 50%;
     width: 6.5vw;
   }
+
   .profile-name {
     color: #fff;
     font-size: 3.5vw;
@@ -66,7 +93,7 @@
     grid-area: navigation;
     background-color: #4D4B72;
     grid-template-columns: 20% 15% 15% 15% 15% 20%;
-    grid-template-rows: 7vh;
+    grid-template-rows: 6vh;
     display: grid;
     align-items: center;
     justify-items: center;
@@ -78,7 +105,7 @@
 }
 
 .navigation .dashboard-icon img {
-    height: 5vh;
+    height: 4vh;
     width: auto;
 }
 
@@ -88,7 +115,7 @@
 }
 
 .navigation .members-icon img {
-    height: 5vh;
+    height: 4vh;
     width: auto;
 }
 
@@ -98,7 +125,7 @@
 }
 
 .navigation .visits-icon img {
-    height: 5vh;
+    height: 4vh;
     width: auto;
 }
 
@@ -108,7 +135,7 @@
 }
 
 .navigation .settings-icon img {
-    height: 5vh;
+    height: 4vh;
     width: auto;
 }
 
