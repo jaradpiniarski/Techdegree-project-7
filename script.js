@@ -26,10 +26,6 @@ alertBanner.addEventListener('click', e => {
     }
 });
 
-// create the html for the alert banner
-notification.innerHTML = 
-`<p class="asterisk">.</p>`
-
 //data for the traffic line graph
 let trafficData = {
     labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3",

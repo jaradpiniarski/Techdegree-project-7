@@ -30,17 +30,10 @@
     font-family: -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
-  .bell,
-  .profile-img {
-    margin-right: 15px;
-  }
-
   .bell {
-    border-right: 1px solid #5b5b5b;
-    padding-top: 5px;
-    padding-right: 10px;
-    margin-right: 10px;
-    height: 5vh;
+    width: 4vh;
+    margin: 0;
+    padding-right: 5px;
   }
 
   .bell-icon:hover {
@@ -51,33 +44,38 @@
     width: 5vw;
     transition-property: transform;
     transition-duration: .5s;
-    z-index: 0;
   }
 
   #notifications {
-      position: relative;
-      z-index: 1;
-      top: ;
+    width: 1.5vh;
+    height: 1.5vh;
+    background: #78cf82;
+    border-radius: 50%;
+    margin-right: -6vw;
+    margin-top: -4vw;
+    z-index: 1;
   }
 
-  .asterisk {
-    margin: 0;
-    font-size: 5vw;
-    font-weight: bold;
-    color: #78CF82;
+  .divider {
+      border-right: 1px solid #5b5b5b;
+      z-index: 2;
+      height: 8vh;
+      padding-left: 5px;
   }
 
   .app-name {
     font-weight: normal;
     color: #E2E3F6;
     font-size: 5vw;
-    flex-grow: 1;
+    flex-grow: .8;
     margin: 0;
   }
 
   .profile-img {
     border-radius: 50%;
     width: 6.5vw;
+    margin-right: 10px;
+    margin-left: 5px;
   }
 
   .profile-name {
@@ -636,7 +634,23 @@
     }
 
     .bell-icon {
-        width: 2vw;
+        max-width: 2.5vw;
+    }
+
+    #notifications {
+        width: 1.5vh;
+        height: 1.5vh;
+        background: #78cf82;
+        border-radius: 50%;
+        margin-right: -6.5vw;
+        margin-top: -3vw;
+        z-index: 1;
+    }
+    
+    .divider {
+        border-right: 1px solid #5b5b5b;
+        height: 8vh;
+        padding-left: 10px;
     }
 
     .app-name {
@@ -716,10 +730,6 @@
         font-size: 2.5vw;
         justify-self: center;
     }
-
-/*     .search-container {
-        padding-right: 20px;
-    } */
 
     .search {
         width: 35vw;  
